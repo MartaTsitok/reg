@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --font-main: 'Philosopher', sans-serif;
+    --font-title: 'Georgia', serif;
+    
+    --h1: 300 36px/1.2 var(--font-main);
+    --h2: 600 26px/1.3 var(--font-title);
+}
+
+h1 { font: var(--h1); }
+h2 { font: var(--h2); }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-wrapper{
+    max-width: 1440px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 125px; 
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    text-wrap: nowrap;
+}
+
+.header-wrapper .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 23px;
+}
+.header-wrapper .logo img{
+    width: 45px; 
+    height: 45px;
+}
+.pageslinks{
+    max-width: 1440px;
+    height: 60px;
+    background-color: #FFC7D4;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.autorization-registration{
+    margin-left: 125px;
+    display: flex;
+}
+
+.autorization {
+    position: relative; 
+}
+
+.autorization img:first-child {
+    width: 580px; 
+    height: 729px;
+    display: block; 
+}
+
+.rectautorization {
+    position: absolute;
+    width: 435px;
+    height: 505px;
+    top: 112px; 
+    left: 72px; 
+    z-index: 2; 
+}
+
+.autorization-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 150px; 
+    left: 150px; 
+    width: 300px; 
+    gap: 30px;
+    color: white; 
+}
+.entrence a{
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 150px;
+    background-color: #C1E1BC;
+    color: #333333;
+    padding: 5px 30px;
+}
+.entrence h2{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.registration{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 224px;
+    margin-top: 50px;
+
+}
+
+.registration-input{
+    display: flex;
+    flex-direction: column;
+    margin-left: -150px;
+    gap: 20px;
+}
+
+.registration-input input{
+    width: 520px;
+    height: 45px;
+    padding: 0 0 0 10px;
+}
+.check{
+    display: flex;
+    text-wrap: nowrap;
+}
+.error-container {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #c62828;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.field-error {
+    border: 2px solid #c62828 !important;
+    background-color: #d796a0;
+}
+
+.field-success {
+    border: 2px solid #2e7d32 !important;
+}
+
+.registration-input button{
+    margin-top: 50px;
+    background-color: #FFC7D4;
+    color: #333333;
+    width: 520px;
+    height: 45px;
+}
+.have-accaunt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.have-accaunt button{
+
+    background-color: #C1E1BC;
+    width: 520px;
+    height: 45px;
+}

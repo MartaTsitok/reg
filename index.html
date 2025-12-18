@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="logo">
+            <img src="/img/logotip.png" alt="Logotip">
+            <span>Анютин сад</span>
+        </div>
+        <div class="header-nav">
+            <div class="about" id="about">О нас</div>
+            <div class="hits" id="hits">Хиты продаж</div>
+            <div class="faq" id="faq">Faq</div>
+            <div class="contacts" id="contacts">Контакты</div>
+        </div>
+    </div>
+    <div class="pageslinks">
+        <p href="#about">Аккаунт</p>
+    </div>
+    <div class="autorization-registration">
+        <div class="autorization">
+            <img src="/img/field.jpg" alt="">
+            <img src="/img/rectautorization.png" alt="" class="rectautorization">
+            <div class="autorization-text">
+                <h3>Есть аккаунт?</h3>
+                <div class="entrence">
+                    <h2>Авторизуйтесь</h2>
+                    <a href="./autorization.html" class="autorization-btn">Войти в аккаунт</a>
+                </div>
+            </div>
+        </div>
+    <div class="registration">
+        <h2>Регистрация</h2>
+        <form class="registration-input" id="registration">
+            <input type="text" class="fio" placeholder="Введите свое ФИО" id="fio" required name="fio">
+            <input type="email" class="email" placeholder="Введите email" id="myEmail" required name="email">
+            <input type="password" class="password" placeholder="Введите пароль" required name="password">
+            <input type="password" class="repeatpassword" placeholder="Повторите пароль" required name="repeatPassword">
+            <input type="text" class="adres" pattern="^г\.Минск[\s\S]+" placeholder="г.Минск, ..." name="adres">
+            <div id="errorMessages" class="error-container"></div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+           <div class="checkbox-container">
+                <input type="checkbox" id="remember" name="remember" value="1">
+                <label for="remember">Запомните меня</label>
+            </div>
+        <div class="have-account">
+            <h3>Уже есть аккаунт?</h3>
+            <button type="button">Войти в аккаунт</button>
+        </div>
+    </div>
+    </div>
+    <script src="./registration.js"></script>
+    <script src="/js/cookies.js"></script>
+</body>
+</html>
